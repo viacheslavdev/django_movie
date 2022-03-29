@@ -1,0 +1,8 @@
+git config --global user.name 'madkisya' - Добавление акк гитхаб
+git config --global user.email 'madkisya@gmail.com'
+git branch - обзор веток
+git branch -D название ветки* - удаление ветки
+git checkout  название ветки* - перейти на другую ветку
+git checkout -b  название ветки* - создать и перейти на новую ветку
+git merge название ветки* - соединение двух веток
+
