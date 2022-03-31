@@ -9,11 +9,11 @@ class MoviesView(View):
     def get(self, request):
 
         movies = Movie.objects.all()
-        return render(request, '../templates/movies/movie_list.html', {'movie_list': movies})
+        return render(request, 'movies/movie_list.html', {'movie_list': movies})
 
 class MovieDetailView(View):
     """ Полное описание фильма """
 
     def get(self, request, pk):
         movie = Movie.objects.get(id=pk)
-        return render(request, '../templates/movies/movie_list.html', {'movie': movie})
+        return render(request, 'movies/movie_list.html', {'movie': movie})
