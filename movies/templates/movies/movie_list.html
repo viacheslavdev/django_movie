@@ -9,11 +9,16 @@
     <title>Document</title>
 </head>
 <body>
-    {% for movie in movie_list %}
-    <a href='{% url  %}'><img src='{{ movie.poster.url }}'></a>
-    <p>
-    {{ movie.title }}
-    <p>
-    {% endfor %}
+    <div class='Movie'>
+        {% for movie in movie_list %}
+        <a href="{% url 'film' pk=movie.id %}"><img src="{{ movie.poster.url }}"></a>
+        <p>
+        {{ movie.title }}
+        <p>
+        {% endfor %}
+    </div>
+
+    <div class='box'>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </div>
+    <div class='box'>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </div>
 </body>
 </html> 
